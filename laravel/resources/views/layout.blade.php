@@ -54,17 +54,35 @@
               </div>
             </div>
 
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-primary" href="register">
-                        Sign up
-                      </a>
-                  <a class="button is-primary" href="/login">
-                    Log in
+
+
+
+<div class="navbar-end">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                   </a>
                 </div>
-              </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link">
+                        <div>{{ Auth::user()->name }}</div>
+                      </a>
+
+                      <div class="navbar-dropdown">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <x-dropdown-link :href="route('logout')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log out') }}
+                            </x-dropdown-link>
+                        </form>
+                      </div>
+                    </div>
+                    </div>
             </div>
           </div>
         </nav>

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->middleware(['auth'])->name('dashboard');
 
 Route::get('/500', function () {
     return view('errors.500');

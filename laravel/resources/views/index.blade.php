@@ -1,5 +1,4 @@
-@extends('layout')
+@extends('layout2')
 
 @section('content')
-<h1>Test site</h1>
 @endsection
