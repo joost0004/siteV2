@@ -1,5 +1,5 @@
 @extends('layout')
 
 @section('content')
-<h1>Waddup</h1>
+<h1>Test site</h1>
 @endsection
