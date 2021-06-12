@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Application controllers
+use App\Http\Controllers\ArticleController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,5 +28,7 @@ Route::get('/500', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::resource('/articles', ArticleController::class)->middleware(['auth']);
 
 require __DIR__.'/auth.php';

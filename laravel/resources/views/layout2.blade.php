@@ -30,11 +30,11 @@
                 </div>
                 <div id="navbarMenuHeroC" class="navbar-menu">
                   <div class="navbar-end">
-                    <a class="navbar-item is-active">
+                    <a class="navbar-item" href="/">
                       Home
                     </a>
-                    <a class="navbar-item">
-                      Examples
+                    <a class="navbar-item" href="/articles">
+                      Form Testing
                     </a>
                     <a class="navbar-item">
                       Documentation

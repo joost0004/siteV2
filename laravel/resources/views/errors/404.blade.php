@@ -16,7 +16,7 @@
           <h1 class="title">404: Page Not Found </h1>
           <p class="subtitle">Looks like the page you are trying to reach is not available right now. <br>
                               Don't worry, this can happen. Click down here to go to our home page!</p>
-          <a class="button is-link is-rounded" href="/">Home</a>
+          <a class="button is-link" href="/">Home</a>
         </div>
         <div class="column has-text-centered">
           <img src="img/uhoh.png" />
