@@ -7,7 +7,7 @@
         <div id='page' class='container'>
             <h1 class='has-text-weight-bold is-size-4'>Edit Article</h1>
 
-            <form method='POST' action="/articles">
+            <form method='POST' action="/articles/{{$article->id}}">
                 @method('PUT')
                 @csrf
 

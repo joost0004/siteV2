@@ -23,11 +23,6 @@
       <p class="card-header-title">
         {{$articles->title}}
       </p>
-      <button class="card-header-icon" aria-label="more options">
-        <span class="icon">
-          <a class="fas fa-angle-down" aria-hidden="true" href="/articles/{{$articles->id}}/edit">+</a>
-        </span>
-      </button>
     </header>
     <div class="card-content">
       <div class="content">

@@ -36,13 +36,10 @@
                     <a class="navbar-item" href="/articles">
                       Form Testing
                     </a>
-                    <a class="navbar-item">
-                      Documentation
-                    </a>
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
                         <span class="navbar-item">
-                            <a class="button is-inverted">
+                            <a class="button is-focused">
                             <span :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
