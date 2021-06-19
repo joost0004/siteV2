@@ -2,13 +2,13 @@
 
 @section ('content')
 
-<br>
-<h4 class="top-list" style="text-align: center;">{{$article->title}}</h4>
-<div class="bottom-list">
+<div class="content">
+    <section class="section">
+    <h1>{{$article->title}}</h1>
+
+    <h4>{{$article->excerpt}}</h4>
+
     <p>{{$article->body}}</p>
-    <br>
-    <a>{{$article->excerpt}}</a>
 </div>
-<br>
 
 @endsection

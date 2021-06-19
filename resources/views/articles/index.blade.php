@@ -26,7 +26,7 @@
     </header>
     <div class="card-content">
       <div class="content">
-        <a>{{$articles->excerpt}}</a>
+        <a href="/articles/{{$articles->id}}">{{$articles->excerpt}}</a>
         <br>
       </div>
     </div>
