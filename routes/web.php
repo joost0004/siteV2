@@ -17,18 +17,26 @@ use App\Http\Controllers\ArticleController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->middleware(['auth'])->name('dashboard');
 
-Route::get('/500', function () {
-    return view('errors.500');
+Route::group(['scheme' => 'https'], function () {
+
+    Route::get('/', function () {
+        return view('index');
+    })->middleware(['auth'])->name('dashboard');
+
+    Route::get('/500', function () {
+        return view('errors.500');
+    });
+
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->middleware(['auth'])->name('dashboard');
+
+    Route::resource('/articles', ArticleController::class)->middleware(['auth']);
+
+    require __DIR__.'/auth.php';
+
+
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
 
-Route::resource('/articles', ArticleController::class)->middleware(['auth']);
-
-require __DIR__.'/auth.php';
