@@ -8,7 +8,7 @@
     <style>
         .star::after {
             content: attr(data-end) ;
-            color: red ;
+            color: blue ;
         }
     </style>
     <title>Home</title>
