@@ -11,7 +11,7 @@
             color: red ;
         }
     </style>
-    <title>Home :)</title>
+    <title>Home</title>
 </head>
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
